@@ -91,7 +91,7 @@ func processImage(path string) (*image.NRGBA, error) {
 // saveThumbnail - save the thumnail image to folder
 func saveThumbnail(srcImagePath string, thumbnailImage *image.NRGBA) error {
 	filename := filepath.Base(srcImagePath)
-	dstImagePath := "thumbnail/" + filename
+	dstImagePath := "../thumbnail/" + filename
 
 	// save the image in the thumbnail folder.
 	err := imaging.Save(thumbnailImage, dstImagePath)
